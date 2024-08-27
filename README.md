@@ -39,9 +39,6 @@ The data for this project is collected from  Yahoo Finance.
 - After training, the model is tested on the test data, and predictions are generated.
 - The root mean square error (RMSE) is calculated to evaluate the performance.
 
-### Saving Models:
-- The trained model and the scalers are saved for future use.
-
 ## Trend Analysis
 For each stock, the project analyzes the trends (whether the price goes up or down) of the actual and predicted prices:
 
