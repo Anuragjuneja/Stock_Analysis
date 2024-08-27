@@ -54,7 +54,7 @@ In addition to stock price prediction, this project also includes portfolio opti
 - TCS
 - NESTLEIND
 - TITAN
-- 'ASTRAL
+- ASTRAL
 - TATAPOWER
 - SUZLON
 - HINDPETRO
