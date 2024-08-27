@@ -70,5 +70,6 @@ For each stock, the project outputs:
 - A plot of the actual vs. predicted prices.
 - The number of matching trends for the last 50 days.
 - The next day's predicted price.
+- Optimized Portfolio of above shares
 
 
