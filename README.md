@@ -62,6 +62,7 @@ In addition to stock price prediction, this project also includes portfolio opti
 - ULTRACEMCO
 - MAHLIFE
 - ADANIGREEN
+
 The optimization ensures that the sum of weights equals 1 and that all weights are non-negative, aiming for an optimal balance between risk and return.
 ## Results
 For each stock, the project outputs:
