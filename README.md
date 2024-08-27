@@ -1,7 +1,7 @@
 # Stock Price Prediction,Trend Analysis and Portfolio Optimization
 
 ## Project Overview
-This project involves building an LSTM-based model for stock price prediction and trend analysis. The model predicts future stock prices based on historical data and evaluates the accuracy of trend predictions for various stocks.
+This project focuses on developing an LSTM-based model to predict stock prices and analyze market trends. The model leverages historical data to forecast future stock prices and assesses the accuracy of trend predictions across different stocks. Additionally, it aids in constructing a less risky portfolio by minimizing variance.
 
 ## Features
 - **Data Preprocessing:** Scales and reshapes stock data for LSTM input.
