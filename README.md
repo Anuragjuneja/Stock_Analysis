@@ -10,7 +10,7 @@ This project focuses on developing an LSTM-based model to predict stock prices a
 - **Prediction:** Predicts future stock prices and trends.
 - **Trend Matching:** Compares predicted trends with actual trends and counts matching trends.
 - **Visualization:** Plots the actual vs. predicted stock prices.
-- **Portfolio Optimization:** Returns optimized portfolio including few specific stocks
+- **Portfolio Optimization:** Returns optimized portfolio of some specific stocks.
 
 ## Main Libraries Used
 - Python 3.x
