@@ -1,16 +1,16 @@
-# Stock Price Prediction,Trend Analysis and Portfolio Optimization
+# Trend Visualization: LSTM’s Capability in Capturing Stock Trends and Portfolio Efficiency
 
 ## Project Overview
-This project focuses on developing an LSTM-based model to predict stock prices and analyze market trends. The model leverages historical data to forecast future stock prices and assesses the accuracy of trend predictions across different stocks. Additionally, it aids in constructing a less risky portfolio by minimizing variance.
+This project explores the effectiveness of LSTM models in predicting stock prices and understanding market trends. By analyzing historical data, the model attempts to forecast future stock prices and assess the accuracy of trend predictions across various stocks. Following the prediction phase, the project focuses on portfolio optimization to construct a less risky investment strategy by minimizing variance while achieving desired returns.
 
 ## Features
-- **Data Loading:** Load Data from Yahoo Finance.
-- **Data Preprocessing:** Scales and reshapes stock data for LSTM input.
-- **Model Training:** Trains an LSTM model on historical stock data.
-- **Prediction:** Predicts future stock prices and trends.
-- **Trend Matching:** Compares predicted trends with actual trends and counts matching trends.
-- **Visualization:** Plots the actual vs. predicted stock prices.
-- **Portfolio Optimization:** Returns optimized portfolio of some specific stocks.
+- **Data Loading:** Load data from Yahoo Finance.
+- **Data Preprocessing:** Normalize and reshape stock data for LSTM input.
+- **Model Training:** Train an LSTM model on historical stock data to predict future prices.
+- **Prediction:** Forecast future stock prices and analyze trend predictions.
+- **Trend Matching:** Compare predicted trends with actual trends and count matching trends.
+- **Visualization:** Plot actual vs. predicted stock prices for visual analysis.
+- **Portfolio Optimization:** Optimize a portfolio of selected stocks to minimize risk while meeting return expectations.
 
 ## Main Libraries Used
 - Python 3.x
@@ -23,33 +23,33 @@ This project focuses on developing an LSTM-based model to predict stock prices a
 - Tabulate
 
 ## Data Collection
-The data for this project is collected from  Yahoo Finance.
+The data for this project is collected from Yahoo Finance, focusing on daily closing prices of various stocks.
 
 ## Model Training and Prediction
 
 ### Data Preprocessing:
-- Each stock's closing prices are normalized using `MinMaxScaler`.
-- Data is split into training (95%) and testing (5%) sets.
+- Normalize each stock's closing prices using `MinMaxScaler`.
+- Split the data into training (95%) and testing (5%) sets.
 
 ### Model Architecture:
-- The LSTM model consists of two LSTM layers with 128 and 64 units respectively.
-- The model is trained to predict the next day's closing price based on the past 100 days of data.
+- The LSTM model consists of two LSTM layers with 128 and 64 units, respectively.
+- The model is trained to predict the next day's closing price using the past 100 days of data.
 
 ### Prediction:
-- After training, the model is tested on the test data, and predictions are generated.
-- The root mean square error (RMSE) is calculated to evaluate the performance.
+- After training, the model generates predictions on the test data.
+- The performance is evaluated using root mean square error (RMSE).
 
 ## Trend Analysis
-For each stock, the project analyzes the trends (whether the price goes up or down) of the actual and predicted prices:
+The project examines the trends (whether prices increase or decrease) of the actual and predicted stock prices:
 
 ### Trend Calculation:
-- The trends for both actual and predicted prices are calculated using the difference between consecutive days.
+- Trends for both actual and predicted prices are calculated based on the difference between consecutive days.
 
 ### Trend Matching:
-- The project compares the trends for the last 50 days and counts how many times the predicted trend matches the actual trend.
+- The trends for the last 50 days are compared, and the number of matching trends between actual and predicted values is counted.
 
 ## Portfolio Optimization
-In addition to stock price prediction, this project also includes portfolio optimization. The goal is to minimize risk (variance) while achieving a user-defined return threshold. The optimization is performed on the following stocks:
+Beyond stock price prediction, the project also delves into portfolio optimization. The goal is to create an optimized portfolio that minimizes risk (variance) while meeting a specific return threshold. This optimization is conducted on the following stocks:
 - TCS
 - NESTLEIND
 - TITAN
@@ -63,13 +63,12 @@ In addition to stock price prediction, this project also includes portfolio opti
 - MAHLIFE
 - ADANIGREEN
 
-The optimization ensures that the sum of weights equals 1 and that all weights are non-negative, aiming for an optimal balance between risk and return.
+The optimization ensures that the sum of weights equals 1, with all weights being non-negative, to strike a balance between risk and return.
+
 ## Results
-For each stock, the project outputs:
-- The RMSE of the model.
-- A plot of the actual vs. predicted prices.
+For each stock, the project provides:
+- The RMSE of the LSTM model.
+- A plot comparing actual vs. predicted prices.
 - The number of matching trends for the last 50 days.
-- The next day's predicted price.
-- Optimized Portfolio of above shares.
-
-
+- The predicted price for the next day.
+- An optimized portfolio of the listed stocks.
