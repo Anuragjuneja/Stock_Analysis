@@ -1,4 +1,4 @@
-# Trend Visualization: LSTM’s Capability in Capturing Stock Trends and Portfolio Efficiency
+# Trend Insight: Stock Forecasting & Portfolio Optimization
 
 ## Project Overview
 This project explores the effectiveness of LSTM models in predicting stock prices and understanding market trends. By analyzing historical data, the model attempts to forecast future stock prices and assess the accuracy of trend predictions across various stocks. Following the prediction phase, the project focuses on portfolio optimization to construct a less risky investment strategy by minimizing variance while achieving desired returns.
